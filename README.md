@@ -20,7 +20,7 @@ A starting point to help you set up your project quickly and use the common comp
 The following list is inspired by the default Android stock alarm app
 
 ### Atoms
-- [ ] Toggle
+- [x] Toggle
 - [ ] Toggle WeekDay
 - [ ] Typography
 - [x] BtnAccordion
@@ -29,15 +29,15 @@ The following list is inspired by the default Android stock alarm app
 - [ ] BtnComposite
 - [x] TextInput
 - [x] Label
+- [x] AlarmWeekdays
 
 ### Molecules
 - [x] AlarmLabel
 - [ ] WeekdaysInput
-- [ ] WeekdaysList
 
 ### Organisms
 - [ ] AlarmEntry
-- [ ] DateTimePicker
+- [x] DateTimePicker
 
 ### Screens
 - [ ] AlarmsList

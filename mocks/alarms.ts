@@ -60,4 +60,42 @@ export const sampleAlarms: Alarm[] = [
     active: false,
     vibrate: true,
   },
+  {
+    id: "lmn",
+    time: {
+      hours: 1,
+      minutes: 2,
+      seconds: 3,
+    },
+    weekdays: {
+      MON: false,
+      TUE: false,
+      WED: false,
+      THU: false,
+      FRI: false,
+      SAT: false,
+      SUN: false,
+    },
+    active: false,
+    vibrate: true,
+  },
+  {
+    id: "aaa",
+    time: {
+      hours: 10,
+      minutes: 50,
+      seconds: 0,
+    },
+    weekdays: {
+      MON: false,
+      TUE: false,
+      WED: false,
+      THU: false,
+      FRI: false,
+      SAT: false,
+      SUN: false,
+    },
+    active: true,
+    vibrate: true,
+  },
 ];
