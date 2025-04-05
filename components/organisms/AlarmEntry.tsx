@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { View } from "react-native";
 import { Text } from "~/components/ui/text";
+import { Switch } from "~/components/ui/switch";
 import { Alarm } from "~/lib/types";
 import {
   Collapsible,
@@ -11,10 +12,19 @@ import BtnAccordion from "~/components/atoms/BtnAccordion";
 import AlarmLabel from "~/components/molecules/AlarmLabel";
 import AlarmTime from "~/components/molecules/AlarmTime";
 import clsx from "clsx";
+import AlarmWeekdays from "~/components/atoms/AlarmWeekdays";
+import WeekdaysInput from "../molecules/WeekdaysInput";
 
-type Props = Alarm;
+type Props = Alarm & { onToggleActive: (value: boolean) => void };
 
-const AlarmEntry = ({ active, time, vibrate, weekdays, label }: Props) => {
+const AlarmEntry = ({
+  active,
+  time,
+  vibrate,
+  weekdays,
+  label,
+  onToggleActive,
+}: Props) => {
   const [open, setOpen] = useState(false);
   return (
     <View className="bg-secondary rounded-2xl p-4">
@@ -37,10 +47,18 @@ const AlarmEntry = ({ active, time, vibrate, weekdays, label }: Props) => {
             <View className="self-start">
               <AlarmTime value={time} />
             </View>
+            <View className="flex-row items-center justify-between mt-4">
+              <View>
+                <AlarmWeekdays value={weekdays} active={active} time={time} />
+              </View>
+              <View>
+                <Switch checked={active} onCheckedChange={onToggleActive} />
+              </View>
+            </View>
           </View>
         </CollapsibleTrigger>
-        <CollapsibleContent>
-          <Text>@radix-ui/react</Text>
+        <CollapsibleContent className="py-4">
+          <WeekdaysInput value={weekdays} />
         </CollapsibleContent>
       </Collapsible>
     </View>

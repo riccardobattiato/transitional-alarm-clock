@@ -21,7 +21,7 @@ The following list is inspired by the default Android stock alarm app
 
 ### Atoms
 - [x] Toggle
-- [ ] Toggle WeekDay
+- [x] Toggle WeekDay
 - [ ] Typography
 - [x] BtnAccordion
 - [x] BtnAddAlarm
@@ -33,7 +33,7 @@ The following list is inspired by the default Android stock alarm app
 
 ### Molecules
 - [x] AlarmLabel
-- [ ] WeekdaysInput
+- [x] WeekdaysInput
 
 ### Organisms
 - [ ] AlarmEntry
