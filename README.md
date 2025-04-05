@@ -27,11 +27,11 @@ The following list is inspired by the default Android stock alarm app
 - [ ] BtnAddAlarm
 - [ ] BtnMenu
 - [ ] BtnComposite
-- [ ] TextInput
-- [ ] Label
+- [x] TextInput
+- [x] Label
 
 ### Molecules
-- [ ] AlarmLabel
+- [x] AlarmLabel
 - [ ] WeekdaysInput
 - [ ] WeekdaysList
 
