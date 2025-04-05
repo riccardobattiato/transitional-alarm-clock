@@ -40,7 +40,7 @@ const AlarmTime = ({ value, onSubmit }: Props) => {
   return (
     <>
       <Pressable onPress={handleTimePress}>
-        <Text className="font-bold text-5xl">
+        <Text className="font-medium text-5xl">
           {value.hours.toString().padStart(2, "0")}:
           {value.minutes.toString().padStart(2, "0")}
         </Text>
