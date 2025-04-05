@@ -23,7 +23,7 @@ The following list is inspired by the default Android stock alarm app
 - [ ] Toggle
 - [ ] Toggle WeekDay
 - [ ] Typography
-- [ ] BtnAccordion
+- [x] BtnAccordion
 - [ ] BtnAddAlarm
 - [ ] BtnMenu
 - [ ] BtnComposite
